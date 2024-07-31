@@ -1,0 +1,113 @@
+
+
+#landpage_generic_image_section
+{
+    width: 100%;
+    height: fit-content;
+
+    background-image: url('../img/imagem_generica_landpage.jpg');
+    background-size: cover;
+}
+
+#landpage_generic_image_section div
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 10em 0 10em 0;
+
+    text-align: center;
+    color: whitesmoke;
+    backdrop-filter: blur(4px);
+}
+#landpage_generic_image_section div a
+{
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: blue;
+}
+
+
+#landpage_diferencial_section
+{
+    width: 75%;
+    margin: auto;
+}
+#acessolock_diferencial
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    margin: 1.2em auto auto auto;
+}
+.diferencial
+{
+    flex-basis: 200px;
+
+    display: flex;
+    flex-direction: column;
+    
+    width: 46%;
+
+    text-align: center;
+    background-color: whitesmoke;
+    
+    border: 0.7px solid  #b6b6b6;
+}
+.diferencial div
+{
+    margin: 5px 0 5px 0;
+}
+
+
+#landpage_produtos_section
+{
+    width: 75%;
+    margin: 1.5em auto auto auto;
+}
+#acessolock_produtos
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    margin: 1.2em auto auto auto;
+}
+.produtos
+{
+    flex-basis: 200px;
+
+    display: flex;
+    flex-direction: column;
+    
+    width: 46%;
+
+    text-align: center;
+    background-color: whitesmoke;
+    
+    border: 0.7px solid  #b6b6b6;
+    transition: 0.2s;
+}
+.produtos:hover
+{
+    scale: 101%;
+}
+.produtos div a
+{
+    color: black;
+}
+
+#landpage_footer
+{
+    display: flex;
+
+    margin: 4em 0 0 0;
+    padding: 10px 10px 10px 10px;
+
+    color: whitesmoke;
+    background-color: #080808;
+}

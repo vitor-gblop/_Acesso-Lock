@@ -1,0 +1,64 @@
+
+:root
+{
+    --perfil_general_size: 60%;
+}
+body
+{
+    background-color: whitesmoke;
+}
+
+#perfil_dropdown_icon
+{
+    position: relative;
+    color: whitesmoke;
+}
+#perfil_dropdown_menu
+{
+    padding: 15px;
+
+    display: none;
+    gap: 15px;
+
+    position: absolute;
+    top: 15px;
+
+    background-color: brown; /* root color*/
+    border-radius: 12px;
+}
+#perfil_dropdown_menu a:hover
+{
+    background-color: #c23333; /* root color*/
+    border-radius: 10px;
+}
+
+#perfil_dropdown_icon:hover #perfil_dropdown_menu
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* INFORMAÇÕES */
+#perfil_info_section
+{
+    width: var(--perfil_general_size);
+    height: 500px;
+
+    margin: auto;
+    padding: 10px;
+
+    background-color: white;
+    border: 0.7px solid #b6b6b6;
+}
+
+tr a
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+.acesso_externo
+{
+    padding: 5px;
+    border: 1px solid rgb(255, 25, 0);
+}

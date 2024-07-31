@@ -1,0 +1,81 @@
+
+
+:root
+{
+    --login_general_size: 60%;
+}
+
+body
+{
+    background-color: whitesmoke;
+}
+
+#login_login_section
+{
+    width: var(--login_general_size);
+    padding: 2em 0 2em 0;
+
+    margin: 15% auto auto auto;
+
+    background-color: white;
+    border: 0.7px solid #b6b6b6; /*root color*/
+    border-radius: 12px;
+
+    /* display: none; */
+}
+#login_signin_section
+{
+    width: var(--login_general_size);
+    padding: 2em 0 2em 0;
+
+    margin: 15% auto auto auto;
+
+    background-color: white;
+    border: 0.7px solid #b6b6b6; /*root color*/
+    border-radius: 12px;
+
+    display: none;
+}
+
+.limiter
+{
+    width: var(--login_general_size);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+.limiter input
+{
+    width: 97%;
+    height: 2rem;
+
+    margin: 1em auto auto auto;
+    border-radius: 0 10px 10px 10px;
+}
+.limiter button
+{
+    margin-top: 1em;
+}
+
+#change_sections
+{
+    display: flex;
+    justify-content: end;
+
+    width: var(--login_general_size);
+    margin: auto;
+}
+#change_sections button
+{
+    margin-top: 5px;
+    padding: 5px;
+    
+    color: whitesmoke;
+    background-color: #4eb31f;
+    border: none;
+}
+#change_sections button:active
+{
+    background-color: #57c723;
+}

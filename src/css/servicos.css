@@ -1,0 +1,222 @@
+
+body
+{
+    background-color: whitesmoke;
+}
+nav span
+{
+    cursor: pointer;
+}
+
+/* DROPDOWN MENU */
+#servico_dropdown_icon
+{
+    position: relative;
+    color: whitesmoke;
+}
+#servico_dropdown_menu
+{
+    padding: 15px;
+
+    display: none;
+    gap: 15px;
+
+    position: absolute;
+    top: 15px;
+
+    background-color: brown; /* root color*/
+    border-radius: 12px;
+}
+#servico_dropdown_menu a:hover
+{
+    background-color: #c23333; /* root color*/
+    border-radius: 10px;
+}
+
+#servico_dropdown_icon:hover #servico_dropdown_menu
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ROWS AND COLUMMS */
+#servicos_main_section
+{
+    width: 80%;
+    margin: auto;
+}
+#row
+{
+    height: fit-content;
+
+    display: flex;
+    gap: 1em;
+
+    margin-top: 3em;
+    
+}
+#col_1
+{
+    max-width: 250px;
+    height: 100px;
+}
+#col_2
+{
+    width: 100%;
+    /* height: 100px;; */
+}
+#general_options
+{
+    padding: 10px;
+
+    background-color: white;
+    border: 0.6px solid #b6b6b6; /* root color*/
+}
+#general_options button
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #1e5fc8; /* root color*/
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+/* TABLES */
+#itens_list
+{
+    /* height: 200px; */
+    padding: 10px;
+
+    background-color: white;
+    border: 0.6px solid #b6b6b6; /* root color*/
+}
+#itens_list h2
+{
+    padding: 0.5em 0 0.5em 0;
+}
+/*
+*/
+table
+{
+    width: 100%;
+}
+th
+{
+    width: 300px;
+}
+td
+{
+    width: 75px;
+}
+
+.head_table th
+{
+    padding: 7px;
+}
+
+.info_table td
+{
+    text-align: center;
+    padding: 7px 0 7px 0;
+
+    border-right: #b6b6b6 solid 0.7px;
+}
+.info_table td:last-of-type
+{
+    border: none;
+}
+.actions
+{
+    padding: 5px;
+
+    color: whitesmoke;
+    background-color: #1e5fc8; /* root color*/
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+.actions:active
+{
+    background-color: #216be0; /* root color*/
+}
+
+/*  */
+#itens_info
+{
+    /* height: 200px; */
+
+    margin-top: 1.2em;
+    padding: 10px;
+
+    background-color: white;
+    border: 0.6px solid #b6b6b6; /* root color*/
+}
+#itens_info h2
+{
+    padding: 0.3em 0 0.3em 0;
+}
+
+/* SEÇÃO ABSOLUTA */
+#servico_opcoes_ocultas_section
+{
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.486);   
+}
+#servico_opcoes_ocultas_section button
+{
+    padding: 10px 0 10px 0;
+    color: whitesmoke;
+    background-color: #216be0;
+    border: none;
+    border-radius: 10px;
+}
+#servico_opcoes_ocultas_section button:hover
+{
+    background-color: #1e5fc8;
+}
+#servico_opcoes_ocultas_section button:disabled
+{
+    background-color: grey;
+}
+
+#item_options
+{
+    display: none ;
+}
+#novo_item
+{
+    display: none ;
+}
+#novo_acesso
+{
+    display: none ;
+}
+
+.hidden_options
+{
+    width: 40%;
+    margin: 15% auto auto auto;
+    padding: 15px 2em 15px 2em;
+
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: white;
+    border-radius: 12px;
+}
+#novo_item div,
+#novo_acesso div
+{
+    display: flex;
+    justify-content: space-between;
+}

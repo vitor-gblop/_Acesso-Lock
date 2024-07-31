@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header
+{
+    display: block;
+    background-color: black;
+    padding: 0.6em 0 0.6em 0;
+}
+#page_header
+{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+#page_header nav
+{
+    display: flex;
+    gap: 10px;
+
+    margin-right: 3em;
+}
+#acessoLock_logo
+{
+    width: 30%;
+}
+
+a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+@media (max-width: 600px)
+{
+    #acessolock_diferencial
+    {
+        justify-content: center !important;
+    }
+    .diferencial
+    {
+        width: 100% !important;
+    }
+    #acessolock_produtos
+    {
+        justify-content: center !important;
+    }
+    .produtos
+    {
+        width: 100% !important;
+    }
+
+    #row
+    {
+        flex-wrap: wrap;
+    }
+}
