@@ -1,3 +1,4 @@
+const gn = new General;
 
 function load_itens()
 {
@@ -24,6 +25,7 @@ function itens_add(obj)
     // atributos - atributtes
     // tr_tag.setAttribute("style", "text-align: center")
     td_actions_tag.setAttribute("class", "actions");
+    td_actions_tag.setAttribute("onclick", "item_options()");
     td_actions_tag.setAttribute("id", obj.key);
 
     // inner html

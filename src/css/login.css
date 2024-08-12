@@ -15,7 +15,7 @@ body
     width: var(--login_general_size);
     padding: 2em 0 2em 0;
 
-    margin: 15% auto auto auto;
+    margin: 9% auto auto auto;
 
     background-color: white;
     border: 0.7px solid #b6b6b6; /*root color*/
@@ -28,7 +28,7 @@ body
     width: var(--login_general_size);
     padding: 2em 0 2em 0;
 
-    margin: 15% auto auto auto;
+    margin: 9% auto auto auto;
 
     background-color: white;
     border: 0.7px solid #b6b6b6; /*root color*/

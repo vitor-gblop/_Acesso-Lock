@@ -38,6 +38,10 @@ a
 
 @media (max-width: 600px)
 {
+    #acessoLock_logo
+    {
+        width: 40%;
+    }
     #acessolock_diferencial
     {
         justify-content: center !important;
