@@ -14,24 +14,29 @@
     display: flex;
     flex-direction: column;
 
-    padding: 10em 0 10em 0;
+    padding: 12em 0 12em 0;
 
     text-align: center;
     color: whitesmoke;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(0px);
 }
 #landpage_generic_image_section div a
 {
-    margin: auto;
+    margin: 19px auto auto auto;
     padding: 15px;
     border-radius: 15px;
     background-color: blue;
+}
+#landpage_generic_image_section div h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 
 
 #landpage_diferencial_section
 {
-    width: 75%;
+    width: 60%;
     margin: auto;
 }
 #acessolock_diferencial
@@ -53,9 +58,10 @@
     width: 46%;
 
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #ffffff;
     
     border: 0.7px solid  #b6b6b6;
+    border-radius: 5px;
 }
 .diferencial div
 {
@@ -65,11 +71,20 @@
 
 #landpage_produtos_section
 {
-    width: 75%;
+    width: 100%;
     margin: 1.5em auto auto auto;
+    padding-bottom: 3em;
+
+    background-color: whitesmoke;
 }
+#landpage_produtos_section h2
+{
+    text-align: center;
+}
+
 #acessolock_produtos
 {
+    width: 60%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -77,6 +92,9 @@
 
     margin: 1.2em auto auto auto;
 }
+
+
+/* .diferencial, */
 .produtos
 {
     flex-basis: 200px;
@@ -87,14 +105,15 @@
     width: 46%;
 
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #ffffff;
     
-    border: 0.7px solid  #b6b6b6;
-    transition: 0.2s;
+    border: 0.7px solid  #e2e2e2;
+    border-radius: 5px;
+    transition: 0.1s;
 }
 .produtos:hover
 {
-    scale: 101%;
+    transform: scale(102%);
 }
 .produtos div a
 {
@@ -105,7 +124,6 @@
 {
     display: flex;
 
-    margin: 4em 0 0 0;
     padding: 10px 10px 10px 10px;
 
     color: whitesmoke;
