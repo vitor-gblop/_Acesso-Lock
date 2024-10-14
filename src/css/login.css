@@ -2,7 +2,7 @@
 
 :root
 {
-    --login_general_size: 60%;
+    --login_general_size: 50%;
 }
 
 body
@@ -39,7 +39,7 @@ body
 
 .limiter
 {
-    width: var(--login_general_size);
+    width: 80%;
     margin: auto;
 
     display: flex;

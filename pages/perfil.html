@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcessoLock - Perfil</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AcessoLock - Perfil</title>
 
-    <link rel="stylesheet" href="../src/css/general.css">
-    <link rel="stylesheet" href="../src/css/perfil.css">
+        <link rel="stylesheet" href="../src/css/general.css">
+        <link rel="stylesheet" href="../src/css/perfil.css">
 
-    <div>
-        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
-    </div>
-
-    <script src="../src/js/initialize.js"></script>
-    <script src="../src/js/general.js"></script>
-    <script src="../src/js/perfil_main.js"></script>
-</head>
-<body>
-    <header>
-        <div id="page_header">
-            <img src="../src/img/logo_acessolock.png" alt="" id="acessoLock_logo">
-            <nav>
-                <!-- login  -->
-                <a href="servicos.html">Controle</a>
-
-                <div id="perfil_dropdown_icon">
-                    <span>Conta</span>
-                    <div id="perfil_dropdown_menu">
-                        <a href="#" id="login_logout_link" onclick="">Perfil</a>
-
-                        <a href="#" id="login_logout_link" onclick="">Sair</a>
-                    </div>
-                </div>
-            </nav>
+        <div>
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
         </div>
-    </header>
-    <!--  -->
-    <section id="perfil_info_section">
-        <h2>Perfil</h2>
+
+        <script src="../src/js/firebase_rtdb/initialize.js"></script>
+        <script src="../src/js/general.js"></script>
+
+
         
-        <hr>
-        <br>
+    </head>
+    <body>
+        <header>
+            <div id="page_header">
+                <a href="servicos.html"><img src="../src/img/logo_acessolock.png" alt="" id="acessoLock_logo"></a>
+                <nav>
+                    <!-- login  -->
+                    <a href="servicos.html">Controle</a>
+
+                    <div id="perfil_dropdown_icon">
+                        <span>Conta</span>
+                        <div id="perfil_dropdown_menu">
+                            <a href="#" id="login_logout_link" onclick="">Perfil</a>
+
+                            <a href="#" id="login_logout_link" onclick="">Sair</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <!--  -->
-        <table>
-            <tr>
-                <td><strong>Nome de usuario: </strong></td>
-                <td id="user_name">Vitor Gabriel</td>
-            </tr>
-            <tr>
-                <td><strong>Email do usuario: </strong></td>
-                <td id="user_email">testes@gmail.com</td>
-            </tr>
-            <tr>
-                <td><strong>Nivel de acesso: </strong></td>
-                <td id="user_level">3</td>
-            </tr>
-            <tr>
-                <td><strong>Senha de acesso: </strong></td>
-                <td><a href="#">acessar senha</a></td>
-            </tr>
-        </table>
-        <!--  -->
-        <br>
-        <hr>
-        <!--  -->
-        
-    </section>
-</body>
+        <section id="perfil_info_section">
+            <h2>Perfil</h2>
+            
+            <hr>
+            <br>
+            <!--  -->
+            <table>
+                <tr>
+                    <td><strong>Nome de usuario: </strong></td>
+                    <td id="user_name">Vitor Gabriel</td>
+                </tr>
+                <tr>
+                    <td><strong>Email do usuario: </strong></td>
+                    <td id="user_email">testes@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><strong>Nivel de acesso: </strong></td>
+                    <td id="user_level">3</td>
+                </tr>
+                <tr>
+                    <td><strong>Senha de acesso: </strong></td>
+                    <td><a href="#">acessar senha</a></td>
+                </tr>
+            </table>
+            <!--  -->
+            <br>
+            <hr>
+            <!--  -->
+            
+        </section>
+    </body>
 </html>

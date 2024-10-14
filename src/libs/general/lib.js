@@ -17,7 +17,7 @@ class General
     } 
 
     updateUrl(newUrl) {
-        window.location.href = newUrl;
+        return window.location.href = newUrl;
     }
 
     jstr(txt){

@@ -67,9 +67,13 @@ a
     {
         width: 100% !important;
     }
+}
 
+@media (max-width: 1060px)
+{
     #row
     {
+        gap: 2em !important;
         flex-wrap: wrap;
     }
 }

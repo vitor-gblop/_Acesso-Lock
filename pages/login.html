@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcessoLock - Entrar</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AcessoLock - Entrar</title>
 
-    <link rel="stylesheet" href="../src/css/general.css">
-    <link rel="stylesheet" href="../src/css/login.css">
-</head>
-<body>
-    <header>
-        <div id="page_header">
-            <a href=""><img src="../src/img/logo_acessolock.png" alt="" id="acessoLock_logo"></a>
+        <!--MODULOS FIREBASE-->
+        <div>
+            <!-- realtime database -->
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+            <!-- firestore database -->
+            <!-- <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script> -->
+            
+            <script src="../src/libs/general/lib.js"></script>
         </div>
-    </header>
 
-    <section id="login_login_section">
-        <div class="limiter">
-            <h2>Acesso</h2>
-
-            <input type="email" name="email_input" id="email_input" placeholder="exemplo@gmail.com">
-
-            <input type="password" name="senha_input" id="senha_input" placeholder="*******">
-
-            <button onclick="">Acessar</button>
+        <div>
+            <link rel="stylesheet" href="../src/css/general.css">
+            <link rel="stylesheet" href="../src/css/login.css">
         </div>
-    </section>
 
-    <section id="login_signin_section">
         
-        <div class="limiter">
-            <h2>Cadastro</h2>
-            <input type="text" name="name_input" id="name_input" placeholder="nome de usuario">
+        
+    </head>
+    <body>
+        <header>
+            <div id="page_header">
+                <a href="landpage.html"><img src="../src/img/logo_acessolock.png" alt="" id="acessoLock_logo"></a>
+            </div>
+        </header>
 
-            <input type="email" name="email_input" id="email_input" placeholder="exemplo@gmail.com">
+        <section id="login_login_section">
+            <div class="limiter">
+                <h2>Entar/ LogIn</h2>
 
-            <input type="password" name="senha_input" id="senha_input" placeholder="*******">
+                <input type="text" name="acessolock_email" id="email_input" placeholder="nome de usuario ou email">
 
-            <input type="password" name="confirma_senha_input" id="consfirma_senha_input" placeholder="*******">
+                <input type="password" name="acessolock_senha" id="senha_input" placeholder='senha'>
 
-            <button onclick="">Registrar</button>
+                <button onclick="">Acessar</button>
+            </div>
+        </section>
+
+        <section id="login_signin_section">
+            
+            <form class="limiter">
+                <h2>Cadastrar/ SignIn</h2>
+                <input type="text" name="acessolock_nickname" id="nickname_input" placeholder="nome de usuario">
+
+                <input type="text" name="acessolock_name" id="name_input" placeholder="nome completo">
+
+                <input type="email" name="acessolock_email_in" id="email_inpu" placeholder="exemplo@gmail.com"
+                value="testes02.gmail.com">
+
+                <input type="password" name="acessolock_senha_in" id="senha_inpu" placeholder="*******"
+                value="12345">
+
+                <input type="password" name="acessolock_confirma_senha" id="confirma_senha_input" placeholder="*******"
+                value="12345">
+
+                <button type="submit" onclick="">Registrar</button>
+            </form>
+
+        </section>
+        <div id="change_sections">
+            <button onclick="trocar_section()">para o login</button>
         </div>
-    </section>
-    <div id="change_sections">
-        <button onclick="">para o login</button>
-    </div>
-</body>
+        
+        <script src="../src/js/firebase_rtdb/login_auxiliar.js"></script>
+        <script src="../src/js/firebase_rtdb/login_module.js"></script>
+        <script src="../src/js/firebase_rtdb/signin_module.js"></script>
+    </body>
 </html>
